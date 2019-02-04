@@ -5,11 +5,11 @@
     <meta charset="utf8" />
     <title>Tienda ON-Line</title>
     <style>
-            html {
+        html {
                 font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
                 line-height:1.5;
                 font-size:1em;
-            }
+        }
         .modal {
             position: fixed; /* Stay in place */
             z-index: 1; /* Sit on top */

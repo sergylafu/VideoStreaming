@@ -1,17 +1,11 @@
 <?php
-require_once("Pantalla.class.php");
-/*session_cache_limiter('nocache, private');
-session_start();
-if (!isset($_SESSION['variable'])){
-	$_SESSION['variable']=uniqid();
-    
-}
+require_once("Pantalla2.class.php");
+require_once("Video.class.php");
+include "../../seguridad/videoStreaming/mostrarCartelera.php";
+$bd=new Cartelera();
+$videos = $bd->verPeliculas();
 
-$mensaje="Pasa";*/
-//$nombre=$_SESSION('nombre');
-$smarty = new Smarty;
 $pantalla=new Pantalla("../../pantallas/videoStreaming");
-$smarty->assign(‘probando’,'4568');
-$pantalla->mostrar("menu.tpl");
-
+$parametros=array('videos' => $videos);
+$pantalla->mostrar("menu.tpl",$parametros);
 ?>

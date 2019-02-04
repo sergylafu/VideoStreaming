@@ -11,16 +11,17 @@ class Pantalla extends Smarty{
 		$this->config_dir=$camino."/configs/";
 		$this->cache_dir=$camino."/cache/";
 	}
-    
-    public function mostrar($nombrePantalla){
-            $this->display($nombrePantalla);
-    }
-	   
-	public function mostrarMensaje($nombrePantalla,$valor){
-        $this->assign("mensaje",$valor);
+	
+	
+	public  function mostrar($nombrePantalla, $parametros){
+	
+			
+		foreach($parametros as $variable => $valor){
+			$this->assign($variable, $valor);
+		}
+		
 		$this->display($nombrePantalla);
 	}
-    
-
+	
 }
 ?>
