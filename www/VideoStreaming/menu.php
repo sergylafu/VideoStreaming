@@ -1,7 +1,7 @@
 <?php
 require_once("Pantalla2.class.php");
 require_once("Video.class.php");
-include "../../seguridad/videoStreaming/mostrarCartelera.php";
+require_once("../../seguridad/videoStreaming/mostrarCartelera.php");
 $bd=new Cartelera();
 $videos = $bd->verPeliculas();
 

@@ -1,5 +1,5 @@
 <?php
-    include "../../seguridad/tema04-s/funciones.php";
+    include "../../seguridad/videoStreaming/funciones.php";
     inicioSesion();
     session_destroy();
     unset($_SESSION);

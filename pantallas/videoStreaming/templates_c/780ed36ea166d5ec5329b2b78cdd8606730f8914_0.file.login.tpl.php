@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-04 15:18:10
+/* Smarty version 3.1.33, created on 2019-02-05 17:31:12
   from 'C:\UwAmp\pantallas\videoStreaming\templates\login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c5849a2d1ddb4_08206471',
+  'unifunc' => 'content_5c59ba509e10f8_82735091',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '780ed36ea166d5ec5329b2b78cdd8606730f8914' => 
     array (
       0 => 'C:\\UwAmp\\pantallas\\videoStreaming\\templates\\login.tpl',
-      1 => 1549252398,
+      1 => 1549339288,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c5849a2d1ddb4_08206471 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c59ba509e10f8_82735091 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="es">
 
@@ -28,11 +28,11 @@ function content_5c5849a2d1ddb4_08206471 (Smarty_Internal_Template $_smarty_tpl)
     <meta charset="utf8" />
     <title>Tienda ON-Line</title>
     <style>
-            html {
+        html {
                 font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
                 line-height:1.5;
                 font-size:1em;
-            }
+        }
         .modal {
             position: fixed; /* Stay in place */
             z-index: 1; /* Sit on top */

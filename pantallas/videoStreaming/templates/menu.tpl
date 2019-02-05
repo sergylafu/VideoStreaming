@@ -37,15 +37,16 @@
     {foreach from=$videos item=video}
     <main>
         <article>
-            <img src="carteles/{$video->cartel}" alt="Cartel" height="200" width="150"><br />
-            <h1>{$video->titulo}</h1>
+           <form action="info.php" method="post">
+                <!--<img src="carteles/{$video->cartel}" alt="Cartel" height="200" width="150"><br />-->
+                <input type="hidden" value="{$video->codigo}" name="codPeli" id="codPeli">
+                <input type="image" src="carteles/{$video->cartel}" height="200" width="150"><br />
+                <h1>{$video->titulo}</h1>
+                
+           </form>
         </article>
     </main>
-
-
-
     <!--<p>{$video->sinopsis}</p><br />-->
-
     {/foreach}
 </body>
 
