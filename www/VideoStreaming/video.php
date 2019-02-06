@@ -1,7 +1,7 @@
 <?php
     require_once ("../../seguridad/videoStreaming/VideoStream.class.php");
-    $ruta=$_POST["cod"];
-    $video=new VideoStream("../../recursos/videos/$ruta");
+    $v=$_GET["v"];
+    $video=new VideoStream("../../recursos/videos/$v");
     $video->start();
     //echo $ruta;
 ?>

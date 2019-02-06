@@ -60,6 +60,7 @@ $sql="select codigo_perfil from perfil_usuario where dni=?";
     mysqli_stmt_bind_param($consulta,"s",$ddni);
     $ddni=$dni;
     mysqli_stmt_execute($consulta);
+    $codigoPerfil=array();
     mysqli_stmt_bind_result($consulta,$codigoPerfil);
     mysqli_stmt_fetch($consulta);
     
